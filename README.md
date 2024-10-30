@@ -63,7 +63,7 @@ BRPOP problems
 ## Code Implementation for Codeforce type platfrom problem submission:
 
 ### create an empty node.js project 
-- initialize 2 folders inside it 
+initialize 2 folders inside it 
 - express-server
 - worker
 
@@ -73,6 +73,11 @@ BRPOP problems
 npm init -y
 npm i -D typescript
 npx tsc --init 
+```
+update the tsconfig.json:
+```bash
+"rootDir": "./src",
+"outDir" : "./dist"
 ```
 - step2:
 install dependencies in express-server:
@@ -97,7 +102,7 @@ npm i redis
 compile the typescript file 
 ```bash
 npx tsc -b
-\\run the compiled file using `node `file name``
+\\run the compiled file using node <compiled-file-name>
 ```
 Now go to postman:
 sent `post` request to:
