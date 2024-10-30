@@ -86,8 +86,10 @@ npx tsc -b
 \\run the compiled file using node <compiled-file-name>
 ```
 this will start the server 
-***install dependices in worker:***
-repeat the step1 from the previous process:
+
+## Installing dependices in worker:
+
+- step1: repeat the step1 from the previous process:
 
 ```bash
 npm i redis
@@ -98,8 +100,9 @@ npx tsc -b
 \\run the compiled file using `node `file name``
 ```
 Now go to postman:
-sent `post` request to: 
-> http://localhost:3000/submit
-
-now start multiple workers using node `<compiled-file-name>`,
+sent `post` request to:
+```bash 
+ http://localhost:3000/submit
+```
+Now start multiple workers using node `<compiled-file-name>`,
 you will see each worker is picking a task when u send any request from the postman
